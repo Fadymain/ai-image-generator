@@ -76,7 +76,6 @@ const CreatePost = () => {
               </div>
             )}
           </div>
-
         </div>
       </form>
     </section>
