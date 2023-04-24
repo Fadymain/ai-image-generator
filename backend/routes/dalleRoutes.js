@@ -12,6 +12,8 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-router.route('/').gett((req, res) => {
+router.route('/').get((req, res) => {
     res.send('Hello from DALL-E');
-})
+});
+
+export default router;
