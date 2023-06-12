@@ -43,7 +43,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if(form.prompt && form.prompt) {
+    if(form.prompt && form.photo) {
       setLoading(true);
       try {
         const response = await fetch('http://localhost:8080/api/v1/post',{
