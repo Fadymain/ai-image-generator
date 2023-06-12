@@ -41,7 +41,7 @@ const CreatePost = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.prevent.default();
+    e.preventDefault();
 
     if(form.prompt && form.prompt) {
       setLoading(true);
