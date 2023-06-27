@@ -3,8 +3,8 @@ import {Loader, Card, FormField} from '../components';
 
 const RenderCards = ({data, title}) => {
   if(data?.length > 0) {
-    return data.map((post) => 
-    post ? <Card key={post._id} {...post} /> : null )
+    return data.map((post, index) => 
+    post ? <Card key={index} {...post} /> : null )
   }
 
   return (
